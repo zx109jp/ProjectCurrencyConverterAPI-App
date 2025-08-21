@@ -12,7 +12,7 @@ Projeto que converte todas as moedas presentes na API do ExchangeRateAPI para a 
 ## Autores do Projeto
 
 <img loading="lazy" src="https://avatars.githubusercontent.com/u/138886648?v=4" width=115><br>
-- [@zx109jp](https://www.github.com/zx109jp)
+ [@zx109jp](https://www.github.com/zx109jp)
 
 
 
