@@ -10,7 +10,7 @@ Projeto que converte todas as moedas presentes na API do ExchangeRateAPI para a 
 - Saber o valor atual de cada moeda segundo a API
 
 ## Autores do Projeto
-<img loading="lazy" src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br>
+<img loading="lazy" src="[https://avatars.githubusercontent.com/u/37356058?v=4](https://avatars.githubusercontent.com/u/138886648?v=4)" width=115><br>
 - [@zx109jp](https://www.github.com/zx109jp)
 
 
