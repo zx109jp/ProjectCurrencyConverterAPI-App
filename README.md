@@ -21,9 +21,13 @@ Feito no Android Studio, utilizando a linguagem Java <br>
 
 <br>
 
-Temos aqui a pagina "main" <br>
+Temos aqui a pagina "main" <br>  É a classe que representa a atividade principal de um aplicativo Android. <br>
 <img width="469" height="215" alt="image" src="https://github.com/user-attachments/assets/e081a0d8-c084-421a-b134-c6f7aa7ec648" />
-<br>  É a classe que representa a atividade principal de um aplicativo Android.
+
+<br> ExchangeRatesResponse
+<br> Modelo de dados (DTO - Data Trasfer Object) que representa a resposta json da API<br>
+<img width="732" height="129" alt="image" src="https://github.com/user-attachments/assets/4ec07c2c-e1d1-4aee-bd7d-b6cbb415ee3f" />
+
 
 
 
