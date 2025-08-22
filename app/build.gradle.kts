@@ -41,4 +41,6 @@ dependencies {
 
     // Implementações adicionais necessárias para utilizar o retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    // Retrofit com GSON - converte objeto java em json e vice versa
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }
