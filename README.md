@@ -24,7 +24,7 @@ Feito no Android Studio, utilizando a linguagem Java <br>
 
 Temos aqui a pagina "main" <br>
 <img width="469" height="215" alt="image" src="https://github.com/user-attachments/assets/e081a0d8-c084-421a-b134-c6f7aa7ec648" />
-
+<br>  É a classe que representa a atividade principal de um aplicativo Android.
 
 
 
