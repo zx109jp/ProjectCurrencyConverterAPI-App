@@ -20,6 +20,12 @@ Projeto que converte todas as moedas presentes na API do ExchangeRateAPI para a 
 Feito no Android Studio, utilizando a linguagem Java <br>
 <img width="436" height="256" alt="image" src="https://github.com/user-attachments/assets/e85ae518-82b1-4d92-a155-f948ed32d920" />
 
+<br>
+
+Temos aqui a pagina "main" <br>
+<img width="469" height="215" alt="image" src="https://github.com/user-attachments/assets/e081a0d8-c084-421a-b134-c6f7aa7ec648" />
+
+
 
 
 
@@ -27,8 +33,8 @@ Feito no Android Studio, utilizando a linguagem Java <br>
 
 ## Autores do Projeto
 
-<img loading="lazy" src="https://avatars.githubusercontent.com/u/138886648?v=4" width=115><br>
- [@zx109jp](https://www.github.com/zx109jp)
+| <img loading="lazy" src="https://avatars.githubusercontent.com/u/138886648?v=4" width=115><br>|
+|  [@zx109jp](https://www.github.com/zx109jp) |
 
 ## Referência
 
