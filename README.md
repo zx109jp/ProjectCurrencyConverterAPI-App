@@ -11,11 +11,12 @@ Projeto que converte todas as moedas presentes na API do ExchangeRateAPI para a 
 
 - Saber o valor atual de cada moeda segundo a API
 
-## Tecnologias utilizadas
+## Tecnologias Utilizadas
 - ExchangeRateAPI
 
 ## Estrutura do Projeto 
-Feito no Android Studio
+Feito no Android Studio, utilizando a linguagem Java
+
 
 
 
