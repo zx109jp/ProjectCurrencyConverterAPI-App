@@ -33,8 +33,9 @@ Temos aqui a pagina "main" <br>
 
 ## Autores do Projeto
 
-| <img loading="lazy" src="https://avatars.githubusercontent.com/u/138886648?v=4" width=115> |<br>
-|  [@zx109jp](https://www.github.com/zx109jp) |
+| <img loading="lazy" src="https://avatars.githubusercontent.com/u/138886648?v=4" width=115> 
+  [@zx109jp](https://www.github.com/zx109jp) |
+  | :---: |
 
 ## Referência
 
