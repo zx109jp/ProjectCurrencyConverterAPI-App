@@ -34,9 +34,10 @@ Temos aqui a pagina "main" <br>
 ## Autores do Projeto
 
 |<img loading="lazy" src="https://avatars.githubusercontent.com/u/138886648?v=4" width=115><br> [@zx109jp](https://www.github.com/zx109jp)|
-  | :---: |
+| :---: |
 
 ## Referência
+<a href="https://www.alura.com.br/artigos/escrever-bom-readme?srsltid=AfmBOorDoV2UtH2CAjuc_rS97nFEgoIHuhnHwNb2AxPki1i-pthuUcK1"> Alura </a>
 
 
 
