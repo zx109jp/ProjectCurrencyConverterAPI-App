@@ -46,6 +46,7 @@ Temos aqui a pagina "main" <br>  É a classe que representa a atividade principa
 
 
 ### Orientador do Projeto 
+O projeto foi feito em sala de aula sobre a supervisão do orientador. <br>
 |<img loading="lazy" src="https://avatars.githubusercontent.com/u/10586424?v=4" width=115><br> [@leonardossrocha](https://www.github.com/leonardossrocha)| 
 | :---: |
 
