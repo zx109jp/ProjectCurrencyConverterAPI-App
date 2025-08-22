@@ -13,9 +13,11 @@ Projeto que converte todas as moedas presentes na API do ExchangeRateAPI para a 
 
 ## Tecnologias Utilizadas
 - ExchangeRateAPI
+- AndroidStudio
+- Biblioteca RetroFIT
 
 ## Estrutura do Projeto 
-Feito no Android Studio, utilizando a linguagem Java
+Feito no Android Studio, utilizando a linguagem Java <br>
 <img width="436" height="256" alt="image" src="https://github.com/user-attachments/assets/e85ae518-82b1-4d92-a155-f948ed32d920" />
 
 
