@@ -14,6 +14,7 @@ Projeto que converte todas as moedas presentes na API do ExchangeRateAPI para a 
 ## Tecnologias Utilizadas
 - ExchangeRateAPI
 - AndroidStudio
+- Java 
 
 ## Estrutura do Projeto 
 Feito no Android Studio, utilizando a linguagem Java <br>
