@@ -14,7 +14,6 @@ Projeto que converte todas as moedas presentes na API do ExchangeRateAPI para a 
 ## Tecnologias Utilizadas
 - ExchangeRateAPI
 - AndroidStudio
-- Biblioteca RetroFIT
 
 ## Estrutura do Projeto 
 Feito no Android Studio, utilizando a linguagem Java <br>
@@ -33,14 +32,17 @@ Temos aqui a pagina "main" <br>
 
 ## Autores do Projeto
 
-|<img loading="lazy" src="https://avatars.githubusercontent.com/u/138886648?v=4" width=115><br> [@zx109jp](https://www.github.com/zx109jp)|
+|<img loading="lazy" src="https://avatars.githubusercontent.com/u/138886648?v=4" width=115><br> [@zx109jp](https://www.github.com/zx109jp)| 
 | :---: |
 
 ## Referência
-<a href="https://www.alura.com.br/artigos/escrever-bom-readme?srsltid=AfmBOorDoV2UtH2CAjuc_rS97nFEgoIHuhnHwNb2AxPki1i-pthuUcK1"> Alura </a>
+- <a href="https://www.alura.com.br/artigos/escrever-bom-readme?srsltid=AfmBOorDoV2UtH2CAjuc_rS97nFEgoIHuhnHwNb2AxPki1i-pthuUcK1"> Alura </a><br>
+ - Biblioteca RetroFIT
 
 
-
+### Orientador do Projeto 
+|<img loading="lazy" src="https://avatars.githubusercontent.com/u/10586424?v=4" width=115><br> [@leonardossrocha](https://www.github.com/leonardossrocha)| 
+| :---: |
 
 ### Aguarde...
  :construction: Projeto em construção :construction:
