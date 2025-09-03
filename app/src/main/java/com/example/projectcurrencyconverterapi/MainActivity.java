@@ -30,4 +30,10 @@ public class MainActivity extends AppCompatActivity {
     private List<String> moedas = List.of("USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "CNY", "HKD", "NZD");
 
     private Map<String, Double> taxasDeCambio;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+}
 }
