@@ -26,5 +26,31 @@
         android:hint="Digite um Valor"
         android:inputType="numberDecimal"
         />
-
+    <Spinner
+        android:id="@+id/spinnerMoedaOrigem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        />
+    <Spinner
+        android:id="@+id/spinnerMoedaDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        />
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Converter"
+        />
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
 </LinearLayout>
