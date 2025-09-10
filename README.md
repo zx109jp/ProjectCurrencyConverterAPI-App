@@ -16,6 +16,7 @@ Projeto que converte todas as moedas presentes na API do ExchangeRateAPI para a 
 - AndroidStudio
 - Java
 - Git
+- Array Adpater - É uma ponte entre uma fonte de dados simples.
 
 ### Comandos do Git Utilizados
 
