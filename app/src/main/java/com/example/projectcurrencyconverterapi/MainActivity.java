@@ -61,6 +61,7 @@ private void carregarTaxasDeCambio(){
 }
 // Metodo para converter o valor de uma moeda para outra
 private void converterMoeda(){
+        ExchangeRateService service = RetrofitClient.getInstance(); // I
 
 }
 }
