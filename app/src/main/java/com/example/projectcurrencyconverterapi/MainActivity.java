@@ -61,7 +61,26 @@ private void carregarTaxasDeCambio(){
 }
 // Metodo para converter o valor de uma moeda para outra
 private void converterMoeda(){
-        ExchangeRateService service = RetrofitClient.getInstance(); // I
+        ExchangeRateService service = RetrofitClient.getInstance(); // Obtem uma instancia do serviço de taxa de cambio
+        Call<ExchangeRatesResponse> call = service.getExchangeRates("3a3afa5518eba952ffb4f410", "USD"); // Faz uma chamada à API para obter as taxas de cambio
 
+    // Executa a chamada de forma assincrona
+    call.enqueue(new Callback<ExchangeRatesResponse>() {
+        @Override
+        public void onResponse(Call<ExchangeRatesResponse> call, Response<ExchangeRatesResponse> response) {
+            if (response.isSuccessful() && response.body() != null) {
+                taxasDeCambio = response.body().getConversionRates(); // Armazena as taxas de câmbio em um mapa
+
+            }else{
+                tvResultado.setText("Erro ao carregar taxas de câmbio");
+    }
+            @Override
+                    public void onFailure(Call<ExchangeRatesResponse> call, Throwable t) {)
+
+
+
+
+}
+}
 }
 }
