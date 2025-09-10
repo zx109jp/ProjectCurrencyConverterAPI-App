@@ -5,7 +5,7 @@
     xmlns:andorid="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
-
+    <!-- Titulo -->
     <TextView
         android:id="@+id/Titulo"
         android:text="Conversor de Moedas"
@@ -26,6 +26,7 @@
         android:hint="Digite um Valor"
         android:inputType="numberDecimal"
         />
+    <!-- Spinners para selecionar as Moedas -->
     <Spinner
         android:id="@+id/spinnerMoedaOrigem"
         android:layout_width="match_parent"
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         />
+    <!-- Botão para converter -->
     <Button
         android:id="@+id/btnConverter"
         android:layout_width="match_parent"
@@ -45,6 +47,7 @@
         android:layout_marginTop="16dp"
         android:text="Converter"
         />
+    <!-- Resultado -->
     <TextView
         android:id="@+id/tvResultado"
         android:layout_width="match_parent"
