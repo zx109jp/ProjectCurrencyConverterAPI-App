@@ -51,36 +51,58 @@ public class MainActivity extends AppCompatActivity {
         spinnerMoedaDestino.setAdapter(adapter);
 
         // Carrega as taxas de cambio da API
+        carregarTaxasCambio();
+
 
         // Configura o botão de conversã
         btnConverter.setOnClickListener(view -> converterMoeda());
 
     }
-// Metodo para carregar taxas de cambio da API
-private void carregarTaxasDeCambio(){
-}
-// Metodo para converter o valor de uma moeda para outra
-private void converterMoeda(){
+
+    // Metodo para converter o valor de uma moeda para outra
+
+
+    // Metodo para carregar taxas de cambio da API
+    private void carregarTaxasCambio() {
         ExchangeRateService service = RetrofitClient.getInstance(); // Obtem uma instancia do serviço de taxa de cambio
         Call<ExchangeRatesResponse> call = service.getExchangeRates("3a3afa5518eba952ffb4f410", "USD"); // Faz uma chamada à API para obter as taxas de cambio
 
-    // Executa a chamada de forma assincrona
-    call.enqueue(new Callback<ExchangeRatesResponse>() {
-        @Override
-        public void onResponse(Call<ExchangeRatesResponse> call, Response<ExchangeRatesResponse> response) {
-            if (response.isSuccessful() && response.body() != null) {
-                taxasDeCambio = response.body().getConversionRates(); // Armazena as taxas de câmbio em um mapa
-
-            }else{
-                tvResultado.setText("Erro ao carregar taxas de câmbio");
-    }
+        // Executa a chamada de forma assincrona
+        call.enqueue(new Callback<ExchangeRatesResponse>() {
             @Override
-                    public void onFailure(Call<ExchangeRatesResponse> call, Throwable t) {)
+            public void onResponse(Call<ExchangeRatesResponse> call, Response<ExchangeRatesResponse> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    taxasDeCambio = response.body().getConversionRates(); // Armazena as taxas de câmbio em um mapa
+
+                } else {
+                    tvResultado.setText("Erro ao carregar taxas de câmbio");
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ExchangeRatesResponse> call, Throwable t) {
+                tvResultado.setText("Erro na conexão");
+                return;
+
+            }
 
 
+        });
+    }
 
+    private void converterMoeda() {
+        String valorTexto = etValor.getText().toString();
 
-}
-}
-}
+        // Verificar se o valor é valido
+        if (valorTexto.isEmpty()){
+            Toast.makeText(this, "Digite um valor", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        String moedaOrigem = spinnerMoedaOrigem.getSelectedItem().toString();
+
+        String moedaDestino = spinnerMoedaDestino.getSelectedItem().toString();
+
+        double valor = Double.parseDouble(valorTexto);
+    }
 }
