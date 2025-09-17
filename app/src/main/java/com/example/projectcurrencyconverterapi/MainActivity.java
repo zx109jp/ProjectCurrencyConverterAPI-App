@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText etValor;
     private TextView tvResultado;
 
-    private List<String> moedas = List.of("USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "CNY", "HKD", "NZD");
+    private List<String> moedas = List.of("USD", "EUR", "GBP", "JPY", "BRL");
 
     private Map<String, Double> taxasDeCambio;
 
@@ -56,6 +56,36 @@ public class MainActivity extends AppCompatActivity {
 
         // Configura o botão de conversã
         btnConverter.setOnClickListener(view -> converterMoeda());
+
+    }
+
+    private void converterMoeda() {
+        String valorTexto = etValor.getText().toString();
+
+        // Verificar se o valor é valido
+        if (valorTexto.isEmpty()){
+            Toast.makeText(this, "Digite um valor", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        String moedaOrigem = spinnerMoedaOrigem.getSelectedItem().toString();
+
+        String moedaDestino = spinnerMoedaDestino.getSelectedItem().toString();
+
+        double valor = Double.parseDouble(valorTexto);
+
+        if(taxasDeCambio == null || taxasDeCambio.containsKey(moedaOrigem) || !taxasDeCambio.containsKey(moedaDestino)){
+            tvResultado.setText("Taxas de câmbio indisponiveis");
+            return;
+        }
+        // Obtem as taxas de cambio para moedas selecionadas
+        double taxaOrigem = taxasDeCambio.get(moedaOrigem);
+        double taxaDestino = taxasDeCambio.get(moedaDestino);
+        // Calcule o valor convertido
+        double valorConvertido = (valor / taxaOrigem) * taxaDestino;
+
+        // Exibe o resultado da conversão formatado
+
+        tvResultado.setText(String.format("Resultado: %.2f %s", valorConvertido, moedaDestino ));
 
     }
 
@@ -91,18 +121,5 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void converterMoeda() {
-        String valorTexto = etValor.getText().toString();
 
-        // Verificar se o valor é valido
-        if (valorTexto.isEmpty()){
-            Toast.makeText(this, "Digite um valor", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        String moedaOrigem = spinnerMoedaOrigem.getSelectedItem().toString();
-
-        String moedaDestino = spinnerMoedaDestino.getSelectedItem().toString();
-
-        double valor = Double.parseDouble(valorTexto);
-    }
 }

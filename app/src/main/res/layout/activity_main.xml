@@ -2,58 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:andorid="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
-    <!-- Titulo -->
+
+    <!-- Componente para inserir título na tela do App-->
     <TextView
         android:id="@+id/Titulo"
         android:text="Conversor de Moedas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="106dp"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textStyle="bold"
+        android:textStyle="bold" />
 
-        ></TextView>
-
-    <!-- Campo para inserir o Valor-->
+    <!--Campo para inserir o valor -->
     <EditText
-        andorid:id="@+id/etValor"
+        android:id="@+id/etValor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite um Valor"
-        android:inputType="numberDecimal"
-        />
-    <!-- Spinners para selecionar as Moedas -->
+        android:hint="Digite um valor"
+        android:inputType="numberDecimal" />
+
+    <!--Campo para escolher moeda de Origem -->
     <Spinner
         android:id="@+id/spinnerMoedaOrigem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        />
+        android:layout_marginTop="16dp"/>
+
+    <!--Campo para escolher moeda de Destino -->
     <Spinner
         android:id="@+id/spinnerMoedaDestino"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        />
-    <!-- Botão para converter -->
+        android:layout_marginTop="16dp"/>
+    <!-- Botão para realizar a conversão escolhida -->
     <Button
         android:id="@+id/btnConverter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Converter"
-        />
-    <!-- Resultado -->
+        android:text="Converter"/>
+
+    <!-- Componente que receberá a conversão e exibirá ao usuário -->
     <TextView
         android:id="@+id/tvResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textStyle="bold"
         android:textSize="18sp"
-        />
+        android:textStyle="bold" />
 </LinearLayout>
